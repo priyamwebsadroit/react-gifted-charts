@@ -27,7 +27,7 @@ import { animated, useSpring } from '@react-spring/web'
 let prevPoints = ''
 
 export const LineChart = (props: LineChartPropsType) => {
-  const scrollRef = useRef(null)
+  const scrollRef = props.scrollRef ?? useRef(null)
   // const opacValue = useMemo(() => new Animated.Value(0), []);
   // const heightValue = useMemo(() => new Animated.Value(0), []);
   // const widthValue = useMemo(() => new Animated.Value(0), []);
